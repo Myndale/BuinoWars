@@ -7,7 +7,7 @@ Gamebuino gb;
 typedef void (* StateHandler)();
 StateHandler currentState = stateTitle;
 
-const char GAME_ID[] PROGMEM = "GBWARS v0.01";
+const char GAME_ID[] PROGMEM = "BWARS v0.01";
 
 struct GameState
 {
@@ -19,6 +19,10 @@ struct GameState
 void setup(){
   Serial.begin(9600);
   gb.begin();
+  
+  // todo: take this out, it's only for development
+  newGame();
+currentState = stateGame;
 }
 
 void loop(){
