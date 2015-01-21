@@ -4,6 +4,9 @@
 # User-specific files
 *.suo
 
+#thumbnails
+Thumbs.db
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
