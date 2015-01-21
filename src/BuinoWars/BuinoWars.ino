@@ -3,6 +3,8 @@
 #include <EEPROM.h>
 Gamebuino gb;
 
+#define SPRITE_SIZE 6
+
 // function ptr typedef for implementing a simple FSM 
 typedef void (* StateHandler)();
 StateHandler currentState = stateTitle;
@@ -22,7 +24,7 @@ void setup(){
   
   // todo: take this out, it's only for development
   newGame();
-currentState = stateGame;
+  currentState = stateGame;
 }
 
 void loop(){
