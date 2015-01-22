@@ -4,6 +4,7 @@
 Gamebuino gb;
 
 #define SPRITE_SIZE 6
+#define WATER_SPRITE 29
 
 // function ptr typedef for implementing a simple FSM 
 typedef void (* StateHandler)();
@@ -23,8 +24,8 @@ void setup(){
   gb.begin();
   
   // todo: take this out, it's only for development
-  newGame();
-  currentState = stateGame;
+  //newGame();
+  //currentState = stateGame;
 }
 
 void loop(){
